@@ -777,9 +777,9 @@ call s:h("DiagnosticUnderlineWarn", {"sp": s:colors.yellow, "gui": "underline", 
 call s:h("DiagnosticUnderlineError", {"sp": s:colors.red, "gui": "underline", "cterm": "underline"})
 
 endif
-  
+
 " }}}
-  
+
 " Vim Illuminate Group {{{
 
 call s:h("illuminatedWord", {"bg": s:colors.special_grey})
@@ -817,3 +817,8 @@ endif
 " Must appear at the end of the file to work around this oddity:
 " https://groups.google.com/forum/#!msg/vim_dev/afPqwAFNdrU/nqh6tOM87QUJ
 set background=dark
+
+highlight Normal guibg=none
+highlight NonText guibg=none
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
